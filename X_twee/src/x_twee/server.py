@@ -39,13 +39,13 @@ def post_tweet(tweet_content):
     asyncio.sleep(5)
     
     username_field = driver.find_element(By.NAME, "text")
-    username_field.send_keys("hellomahgod")  # Replace with your Twitter username
+    username_field.send_keys("username")  # Replace with your Twitter username
     username_field.send_keys(Keys.RETURN)
     
     asyncio.sleep(5)  # Wait for password page
     
     password_field = driver.find_element(By.NAME, "password")
-    password_field.send_keys("hellomahgod@321")  # Replace with your Twitter password
+    password_field.send_keys("password")  # Replace with your Twitter password
     password_field.send_keys(Keys.RETURN)
     
     asyncio.sleep(5)  # Wait for login
