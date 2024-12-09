@@ -1,0 +1,21 @@
+[project]
+name = "x-twee"
+version = "0.1.0"
+description = "A MCP server project"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+ "httpx>=0.28.1",
+ "mcp>=1.1.0",
+ "python-dotenv>=1.0.1",
+]
+[[project.authors]]
+name = "TannisaS"
+email = "tannnisasinha@gmail.com"
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project.scripts]
+x-twee = "x_twee:main"
